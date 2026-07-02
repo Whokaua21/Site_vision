@@ -1,0 +1,438 @@
+// ===============================
+// CORES
+// ===============================
+$background: #0d0d0d;
+$background2: #161616;
+$card: #1f1f1f;
+$text: #f5f5f5;
+$text2: #b3b3b3;
+$primary: #00bfff;
+$border: #2f2f2f;
+$shadow: rgba(0,0,0,.5);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Open Sans",sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:$background;
+    color:$text;
+    line-height:1.8;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+hr{
+    border:none;
+    height:1px;
+    background:$border;
+    width:90%;
+    margin:60px auto;
+}
+
+h1,h2,h3{
+    font-weight:700;
+}
+
+p{
+    color:$text2;
+}
+
+// ===============================
+// HEADER
+// ===============================
+
+header{
+
+    position:sticky;
+    top:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(13,13,13,.95);
+    backdrop-filter:blur(10px);
+
+    border-bottom:1px solid $border;
+    z-index:100;
+
+    .box_{
+
+        ul{
+            display:flex;
+            gap:15px;
+
+            button{
+
+                padding:10px 18px;
+                border:none;
+                border-radius:30px;
+
+                background:$card;
+                color:$text;
+
+                cursor:pointer;
+                transition:.3s;
+
+                &:hover{
+                    background:$primary;
+                    color:black;
+                    transform:translateY(-2px);
+                }
+
+            }
+
+        }
+
+    }
+
+    #title{
+
+        h1{
+            color:$primary;
+            letter-spacing:3px;
+            font-size:2rem;
+        }
+
+    }
+
+}
+
+// ===============================
+
+._body{
+
+    width:min(1200px,90%);
+    margin:auto;
+    padding:60px 0;
+
+}
+
+// ===============================
+
+.text_paragrafy{
+
+    margin-bottom:70px;
+
+    h2{
+
+        font-size:2.2rem;
+        margin-bottom:20px;
+        color:white;
+
+        &::after{
+
+            content:"";
+            display:block;
+
+            width:80px;
+            height:4px;
+
+            background:$primary;
+            margin-top:8px;
+
+            border-radius:20px;
+
+        }
+
+    }
+
+    p{
+        font-size:1.05rem;
+    }
+
+}
+
+// ===============================
+// Cards superiores
+// ===============================
+
+.card_info{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+
+    margin-bottom:80px;
+
+}
+
+.Card_img{
+
+    background:$card;
+
+    border:1px solid $border;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:.4s;
+
+    box-shadow:0 15px 30px $shadow;
+
+    &:hover{
+
+        transform:translateY(-8px);
+
+        img{
+            transform:scale(1.08);
+        }
+
+    }
+
+    p{
+
+        padding:20px;
+        text-align:center;
+        color:white;
+
+    }
+
+    img{
+
+        height:230px;
+        object-fit:cover;
+        transition:.5s;
+
+    }
+
+}
+
+// ===============================
+// Problema
+// ===============================
+
+.Problem{
+
+    margin:80px 0;
+
+    h2{
+        margin-bottom:20px;
+        color:$primary;
+    }
+
+    #frase_{
+
+        text-align:center;
+        margin:40px 0;
+
+        font-size:1.4rem;
+        color:white;
+
+    }
+
+}
+
+.Problem_img{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+
+    margin-top:40px;
+
+    img{
+
+        height:260px;
+        object-fit:cover;
+
+        border-radius:15px;
+        border:1px solid $border;
+
+    }
+
+}
+
+// ===============================
+// About
+// ===============================
+
+.About_problem{
+
+    display:flex;
+    align-items:center;
+    gap:50px;
+
+    margin:100px 0;
+
+    img{
+
+        width:250px;
+        border-radius:20px;
+
+    }
+
+    p{
+
+        flex:1;
+
+    }
+
+}
+
+// ===============================
+
+.card_vs{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:40px;
+
+    margin:60px 0;
+
+    div{
+
+        background:$card;
+
+        border-radius:18px;
+
+        padding:35px;
+
+        border:1px solid $border;
+
+        box-shadow:0 10px 30px $shadow;
+
+    }
+
+    h3{
+
+        color:$primary;
+        margin-bottom:20px;
+
+    }
+
+    ul{
+
+        list-style:disc;
+        margin-left:20px;
+
+        li{
+
+            margin:12px 0;
+            color:$text2;
+
+        }
+
+    }
+
+}
+
+// ===============================
+// PERSONAS
+// ===============================
+
+.Persona_{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:35px;
+
+    margin:70px 0;
+
+    div{
+
+        background:$card;
+
+        border-radius:18px;
+
+        overflow:hidden;
+
+        border:1px solid $border;
+
+        transition:.3s;
+
+        &:hover{
+
+            transform:translateY(-8px);
+
+            border-color:$primary;
+
+        }
+
+    }
+
+    h3{
+
+        padding:20px;
+        text-align:center;
+        color:$primary;
+
+    }
+
+    img{
+
+        height:240px;
+        object-fit:cover;
+
+    }
+
+    p{
+
+        padding:25px;
+
+    }
+
+}
+
+// ===============================
+
+footer{
+
+    background:black;
+
+    padding:40px;
+
+    text-align:center;
+
+    color:white;
+
+    border-top:1px solid $border;
+
+}
+
+// ===============================
+
+@media(max-width:800px){
+
+    header{
+
+        flex-direction:column;
+        gap:20px;
+
+    }
+
+    .About_problem{
+
+        flex-direction:column;
+
+        img{
+            width:100%;
+            max-width:350px;
+        }
+
+    }
+
+}
