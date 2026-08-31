@@ -1,178 +1,422 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vion Vision</title>
+    <link
+      rel="shortcut icon"
+      href="imagen/android-chrome-512x512.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="main.css">
-    <title>Vision Document</title>
-</head>
-<body>
-    <header>
-        <div class="box_">
-            <ul>
-                <li><button><a href="https://github.com/Whokaua21">Github</a></button></li>
-                <li><button><a href="src/Black and White Modern Tech Company Presentation.pptx">Dowload Slide</a></button></li>
-            </ul>
-        </div>
-        <div id="title">
-            <h1>Vision</h1>
-        </div>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="ilustration_cicurs"></div>
+      <div class="logo">
+        <img
+            class="img-fluid"
+          src="imagen/Adobe_Express_-_file-removebg-preview.png"
+          alt="Incon Vion Vision"
+        />
+        <h1>Vion Vision</h1>
+      </div>
+      <div class="ilustration_cicurs"></div>
     </header>
-    <div class="_body">
-
-        <div class="text_paragrafy" id="about_">
-            <h2>Oque é Vision</h2>
-            <p>O Vision é um sistema inteligente de monitoramento por câmeras desenvolvido para aumentar a segurança de pessoas e
-                ambientes por meio da tecnologia. Utilizando Inteligência Artificial e Visão Computacional, o sistema analisa as imagens
-                capturadas pelas câmeras em tempo real, identificando automaticamente situações de risco e eventos previamente configurados
-                pelo usuário.
-                Diferente dos sistemas tradicionais, o Vision não se limita apenas à gravação de imagens. Ele processa as informações recebidas,
-                detecta ocorrências importantes e pode emitir alertas imediatos para os responsáveis, permitindo uma resposta mais rápida e 
-                eficiente em casos de emergência.
-            </p>
+    <div class="Carosel_itens">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-        <hr>
-        <div class="card_info">
-            <div class="Card_img">
-                <p>Analise</p>
-                <img id="img1" src="imagen/images (1).jpeg" alt="">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="imagen/floresta-chamas-california.webp" class="d-block mx-auto" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
             </div>
-    
-            <div class="Card_img">
-                <p>Segurança</p>
-                <img  id="img2" src="imagen/images (2).jpeg" alt="">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="imagen/download.png" class="d-block mx-auto" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
             </div>
-    
-            <div class="Card_img">
-                <p>Desenvolvimento</p>
-                <img id="img3" src="imagen/images.jpeg" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="imagen/download.png" class="d-block mx-auto" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
             </div>
-    
+          </div>
         </div>
-        
-        <div class="Problem" >
-            <h2>Problema</h2>
-            <p>Em muitas situações de emergência, a demora na identificação do problema pode resultar em consequências graves.
-                Os sistemas de monitoramento convencionais dependem da observação humana constante, tornando o processo cansativo e sujeito a falhas.
-                Além disso, muitas câmeras apenas gravam imagens sem realizar qualquer análise automática, fazendo com que eventos importantes sejam
-                percebidos tarde demais.
-            </p>
-            <p id="frase_"><em>"Segurança eficiente começa com monitoramento inteligente."</em></p>
-            <div class="Problem_img">
-                <div>
-                    <img src="imagen/images (3).jpeg" alt="">
-                    <hr>
-                </div>
-                <div>
-                    <img src="imagen/images (4).jpeg" alt="">
-                    <hr>
-                </div>
-                
-
-            </div>
-        </div>
-        <div class="About_problem">
-            <img src="imagen/images(emergencia).jpeg" alt="">
-            <p>Em situações de emergência, cada segundo pode fazer a diferença. Acidentes, quedas, invasões ou outras ocorrências exigem uma identificação rápida para que as medidas necessárias sejam tomadas o quanto antes.
-
-                O Vision foi desenvolvido para reduzir o tempo entre a ocorrência de um incidente e a
-                resposta dos responsáveis. Utilizando Inteligência Artificial e Visão Computacional, 
-                o sistema monitora o ambiente em tempo real e identifica automaticamente situações de
-                risco previamente configuradas.
-                Ao detectar uma emergência, o Visio pode emitir alertas instantâneos para os responsáveis
-                pelo local, permitindo uma resposta mais ágil e eficiente. Além disso, todas as ocorrências
-                ficam registradas no sistema, facilitando o acompanhamento dos eventos e auxiliando na
-                tomada de decisões.
-                Com essa abordagem, o Visio transforma o monitoramento tradicional em uma solução 
-                inteligente e proativa, contribuindo para aumentar a segurança, minimizar danos e
-                proteger pessoas e patrimônios.
-            </p>
-        </div>
-        <hr>
-        <div>
-            <div class="text_paragrafy">
-                <h2>Solução</h2>
-                <p>Nossa proposta utiliza Inteligência Artificial para analisar continuamente as imagens capturadas pela câmera.
-                    Quando uma situação previamente configurada é detectada, o sistema envia notificações em tempo real, permitindo uma resposta 
-                    rápida e eficiente.
-                    Além disso, a plataforma oferece uma interface simples para que o usuário personalize as detecções conforme sua necessidade.
-                </p>
-            </div>
-            <div class="card_vs">
-                <div>
-                    <h3>Solução</h3>
-                    <ul>
-                        <li>Alertas imediatos para resposta rápida.</li>
-                        <li>Registro e histórico organizado de eventos.</li>
-                        <li>Redução de erros por meio da automação.</li>
-                        <li>Painel com monitoramento, estatísticas e ocorrências em tempo real.</li>
-                    </ul>
-                </div>
-                <div>
-                    <h3>Problema</h3>
-                    <ul>
-                        <li>Demora para identificar acidentes ou emergências.</li>
-                        <li>Dificuldade para localizar ocorrências importantes.</li>
-                        <li>Alto risco de falhas humanas durante o monitoramento.</li>
-                        <li>Pouca visibilidade sobre o que acontece no ambiente.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div>
-            <div class="text_paragrafy">
-                <h2>Seguimento de clientes</h2>
-                <p>O Vision foi desenvolvido para atender diferentes segmentos que necessitam de monitoramento inteligente, segurança e 
-                    resposta rápida a situações de risco. Sua tecnologia pode ser adaptada às necessidades de cada ambiente, oferecendo maior 
-                    controle e eficiência.
-                </p>
-            </div>
-            <div class="Persona_">
-                <div>
-                    <h3>Rafael</h3>
-                    <img src="imagen/images (5).jpeg" alt="">
-                    <p>
-                        Rafael é responsável pela segurança de condomínios e estabelecimentos comerciais.
-                        Seu maior desafio é garantir a proteção de pessoas e patrimônios sem sobrecarregar
-                        a equipe de vigilância. Ele busca uma solução que reduza falsos alarmes, automatize
-                        relatórios e se integre a sistemas já existentes, aumentando a eficiência e justificando
-                        os investimentos em segurança.
-                    </p>
-                </div>
-    
-                <div>
-                    <h3>Dra. Verônica</h3>
-                    <img src="imagen/images (1).png" alt="">
-                    <p>
-                        Dra. Verônica atua na gestão pública e precisa de informações em tempo real para
-                        responder rapidamente a emergências e melhorar a segurança urbana. Ela procura uma solução
-                        que aproveite a infraestrutura de câmeras já instalada, gere dados estatísticos para apoiar decisões
-                        e respeite a LGPD, contribuindo para uma cidade mais segura e inteligente com baixo custo de implantação.
-
-                    </p>
-                </div>
-    
-                <div>
-                    <h3>Nal</h3>
-                    <img src="imagen/images.png" alt="">
-                    <p>Nal tem 60 anos e vive preocupado com a segurança e a saúde. Enfrenta 
-                        situações de insegurança em vias públicas, o que gera sentimentos de ansiedade, 
-                        desconfiança e medo. Busca uma solução que ofereça vigilância constante, contato
-                        rápido com as autoridades e agilidade em casos de emergência. Aposentado da petroquímica,
-                        enxerga a cidade como um ambiente perigoso e valoriza tecnologias que aumentem sua proteção e
-                        tranquilidade no dia a dia.
-                    </p>
-                </div>
-    
-            </div>
-    
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-    <footer>
-        Vision
-    </footer>
-</body>
+    <div>
+      <div>
+        <img src="imagen/download.png" alt="Imagens_ilustrativa" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quaerat
+          temporibus, enim voluptates deserunt minus mollitia necessitatibus
+          placeat culpa aperiam nam consequatur maxime tenetur fugit eum?
+          Cupiditate voluptate ut magni.
+        </p>
+      </div>
+    </div>
+    <span>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </span>
+    <div>
+      <h2>Contribuidores do Projeto</h2>
+
+      <div class="d-flex">
+        <div>
+          <img src="imagen/download.png" alt="Miqueias" />
+          <h3>Miqueias Dhjonison</h3>
+        </div>
+        <div>
+          <img src="imagen/download.png" alt="Kaua" />
+          <h3>Kauã Eduardo</h3>
+        </div>
+        <div>
+          <img src="imagen/download.png" alt="Alan" />
+          <h3>Alan</h3>
+        </div>
+        <div>
+          <img src="imagen/download.png" alt="Tarcis" />
+          <h3>Tarcis Rangel</h3>
+        </div>
+        <div>
+          <img src="imagen/download.png" alt="Pedro" />
+          <h3>Pedro</h3>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h2>Dados Estatisticos</h2>
+      <div class="d-flex">
+        <div>
+          <div>
+            <img src="imagen/download.png" alt="Imagem do site analitico" />
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              quae tempore consequuntur? Voluptatem alias molestias, optio
+              obcaecati explicabo illo! Veniam delectus culpa accusamus magni
+              dolore, aut nam sint non odit!
+            </p>
+          </div>
+          <a href=""></a>
+        </div>
+        <div>
+          <div>
+            <img src="imagen/download.png" alt="Imagem do site analitico" />
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              quae tempore consequuntur? Voluptatem alias molestias, optio
+              obcaecati explicabo illo! Veniam delectus culpa accusamus magni
+              dolore, aut nam sint non odit!
+            </p>
+          </div>
+          <a href=""></a>
+        </div>
+        <div>
+          <div>
+            <img src="imagen/download.png" alt="Imagem do site analitico" />
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              quae tempore consequuntur? Voluptatem alias molestias, optio
+              obcaecati explicabo illo! Veniam delectus culpa accusamus magni
+              dolore, aut nam sint non odit!
+            </p>
+          </div>
+          <a href=""></a>
+        </div>
+        <div>
+          <div>
+            <img src="imagen/download.png" alt="Imagem do site analitico" />
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              quae tempore consequuntur? Voluptatem alias molestias, optio
+              obcaecati explicabo illo! Veniam delectus culpa accusamus magni
+              dolore, aut nam sint non odit!
+            </p>
+          </div>
+          <a href=""></a>
+        </div>
+        <div>
+          <div>
+            <img src="imagen/download.png" alt="Imagem do site analitico" />
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              quae tempore consequuntur? Voluptatem alias molestias, optio
+              obcaecati explicabo illo! Veniam delectus culpa accusamus magni
+              dolore, aut nam sint non odit!
+            </p>
+          </div>
+          <a href=""></a>
+        </div>
+        <div>
+          <div>
+            <img src="imagen/download.png" alt="Imagem do site analitico" />
+          </div>
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+              quae tempore consequuntur? Voluptatem alias molestias, optio
+              obcaecati explicabo illo! Veniam delectus culpa accusamus magni
+              dolore, aut nam sint non odit!
+            </p>
+          </div>
+          <a href=""></a>
+        </div>
+      </div>
+
+      <div>
+        <div class="card mb-3 p-2" style="max-width: 800px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="imagen/download.png"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 p-2" style="max-width: 800px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="imagen/download.png"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 p-2" style="max-width: 800px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="imagen/download.png"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-3 p-2" style="max-width: 800px">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img
+                src="imagen/download.png"
+                class="img-fluid rounded-start"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a wider card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+        <div class="card" style="width: 18rem">
+          <img src="..." class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card’s content.
+            </p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div>
+        <iframe
+          width="700"
+          height="700"
+          src="https://www.youtube.com/embed/x0ZvMzyzC6Q?si=uCjBD2tsKM6YOXLw"
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolorem
+        quae sed facilis repudiandae repellat rerum veniam tenetur expedita
+        similique. Quas repellendus facilis, culpa alias vitae dicta aliquam eos
+        sint.
+      </p>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
