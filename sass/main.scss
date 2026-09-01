@@ -17,33 +17,82 @@ header{
         width:6rem;
     }
 }
-.Carosel_itens{
-    padding-top: 10rem;
-    max-width: 100%;
+.Carosel_itens {
+    width: 100%;
     height: 500px;
-    background-color: rgb(141, 71, 71);
-    .carousel{
-        
+    overflow: hidden;
+
+    .carousel {
         width: 100%;
         height: 100%;
-        
     }
-    .carousel-caption{
-        position: absolute;
 
-    }
-    .carousel-selection .carousel-itens {
-        max-height: 800px;
-        object-fit: cover;
+    .carousel-inner {
         width: 100%;
-        background-color: aquamarine;
-        justify-content: center;
-        img{
+        height: 100%;
+    }
+
+    .carousel-item {
+        width: 100%;
+        height: 500px;
+
+        img {
             width: 100%;
-            height: 100%;
+            height: 500px;
             object-fit: cover;
         }
+    }
+}
+.Conted_primary{
+    background-color: aquamarine;
+    padding: 2rem;
+    .Figure_text{
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
         
+        img{
+           width: 25rem;
+           border-radius: 10px;
+        }
+        p{
+            background-color: rgb(123, 201, 175);
+            width: 50%;
+            
+        }
+    }
+    .line-div{
+        display: flex;
+        justify-content: center;
+        gap: 8rem;
+        padding-top: 40px;
+        svg{
+
+        }
+    }
+    .contribuidores{
+        background-color: blue;
+        padding: 1px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .pers{
+            display: flex;
+            justify-content: center;
+            gap: 15rem;
+
+        }
+        
+        h2{
+            text-align: center;
+        }
+        div{
+            img{
+                border-radius: 100%;
+                border: solid red 2px;
+            }
+        }
     }
 
 }
